@@ -1,0 +1,48 @@
+export const ContactFormInput = [
+  {
+    title: "First name *",
+    name: "fname",
+    type: "text",
+    invalied: "First name is required field.",
+    xl: 6,
+    md: 6,
+  },
+  {
+    title: "Last Name *",
+    name: "lname",
+    type: "text",
+    invalied: "Last name is required field.",
+    xl: 6,
+    md: 6,
+  },
+  {
+    title: "Company Name *",
+    name: "cname",
+    type: "text",
+    invalied: "Company name is required field.",
+    xl: 6,
+    md: 6,
+  },
+  {
+    title: "Company Location *",
+    name: "clocation",
+    type: "text",
+    invalied: "Company location is required field.",
+    xl: 6,
+    md: 6,
+  },
+  {
+    title: "Phone Number *",
+    name: "pnumber",
+    type: "number",
+    invalied: "Phone number is required field.",
+    xl: 12,
+  },
+  {
+    title: "First name *",
+    name: "Email *",
+    type: "email",
+    invalied: " Email is required field.",
+    xl: 12,
+  },
+];
