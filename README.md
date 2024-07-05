@@ -1,6 +1,6 @@
 # LobbyLink
 
-# How Run Application?
+# How Run LabbyLink Application?
 
 ## Step1
 
