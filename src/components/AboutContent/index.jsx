@@ -17,7 +17,7 @@ const AboutContent = () => {
           {/* Text content section */}
           <Col xl={8} className={`p-1 p-xl-6`}>
             <h1
-              className={`text-blue-100 text-center text-xl-start fw-bold letterSpacing-1`}
+              className={`text-blue-100 text-center text-xl-start fw-bold letterSpacing-1 animate__animated animate__fadeIn animate__delay-0.4s`}
               style={{
                 fontSize: `clamp(10px, 7vw, 56px)`,
               }}
@@ -25,7 +25,7 @@ const AboutContent = () => {
               Our Mission:
             </h1>
             <p
-              className={`lh-lg lh-xs-0 text-blue-100 text-center text-xl-start`}
+              className={`lh-lg lh-xs-0 text-blue-100 text-center text-xl-start animate__animated animate__fadeIn animate__delay-0.6s`}
               style={{ fontSize: `clamp(10px, 5vw, 28px)` }}
             >
               Enhance Visitor Welcoming Experiences Streamline Operations for

@@ -30,7 +30,7 @@ const ContactForm = () => {
         {/* Form header */}
         <h2
           style={{ fontSize: "clamp(10px, 8vw, 50px)" }}
-          className={`pb-3 text-center text-xl-start`}
+          className={`pb-3 text-center text-xl-start animate__animated animate__fadeIn animate__delay-0.4s`}
         >
           Lets Get Started!
         </h2>

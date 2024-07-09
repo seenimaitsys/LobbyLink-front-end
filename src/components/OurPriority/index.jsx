@@ -1,5 +1,6 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { DynamicCard } from "./DynamicCard";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const OurPriority = () => {
   return (
@@ -8,12 +9,14 @@ const OurPriority = () => {
       {/* Row to contain the title and cards, with center alignment and gap */}
       <Row className={`d-flex align-items-center justify-content-center gap-5`}>
         {/* Title of the section */}
+
         <h1
           style={{ fontSize: "clamp(10px, 9vw, 54px)" }}
           className="pt-5 ps-5 text-center text-xl-start text-blue-100"
         >
           Your Safety Is Our Priority
         </h1>
+
         {/* Mapping through the DynamicCard array to create each card */}
         {DynamicCard.map((value, index) => {
           return (
@@ -31,21 +34,26 @@ const OurPriority = () => {
                 } h-200`}
               >
                 {/* Card header with dynamic text color and fixed font size */}
-                <h5
-                  className={`${
-                    index % 2 == 0 ? "text-white" : "text-blue-100"
-                  } pb-2 fs-38 fw-bold`}
+                <AnimationOnScroll
+                  animateIn={`animate__fadeIn animate__delay-${0.3}s`}
+                  animateOnce={true}
                 >
-                  {`0${index + 1}.`}
-                </h5>
-                {/* Card description with dynamic text color */}
-                <p
-                  className={`${
-                    index % 2 == 0 ? "text-white" : "text-blue-100"
-                  } pb-3 fs-18`}
-                >
-                  {value.Desc}
-                </p>
+                  <h5
+                    className={`${
+                      index % 2 == 0 ? "text-white" : "text-blue-100"
+                    } pb-2 fs-38 fw-bold`}
+                  >
+                    {`0${index + 1}.`}
+                  </h5>
+                  {/* Card description with dynamic text color */}
+                  <p
+                    className={`${
+                      index % 2 == 0 ? "text-white" : "text-blue-100"
+                    } pb-3 fs-18`}
+                  >
+                    {value.Desc}
+                  </p>
+                </AnimationOnScroll>
               </Card>
             </Col>
           );

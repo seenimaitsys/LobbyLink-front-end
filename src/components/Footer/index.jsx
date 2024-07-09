@@ -34,9 +34,11 @@ const Footer = () => {
                 Address
               </h6>
               <p className={`text-white`}>
-                <a href={`#!`} className={`text-white  text-decoration-none`}>
-                  500 Terry Francine St.
-                  <br /> San Francisco, CA 94158
+                <a
+                  href={`https://www.google.com/maps/place/FG75%2B9Q,+Acton,+MA,+USA/@42.4634375,-71.4905625,17z/data=!3m1!4b1!4m5!3m4!1s0x89e39130277677cf:0xe8a2dc88b89c2564!8m2!3d42.4634375!4d-71.4905625?entry=ttu`}
+                  className={`text-white  text-decoration-none`}
+                >
+                  Boston, MA , USA
                 </a>
               </p>
             </Col>
@@ -82,12 +84,12 @@ const Footer = () => {
 
         {/* Footer copyright */}
         <div className={`text-center p-4 text-white bg-blue-400`}>
-          © 2021 Copyright:
+          © 2024 Copyright:
           <a
             className={`text-reset fw-bold ms-1`}
-            href={`https://mdbootstrap.com/`}
+            href={`https://lobbylink.ai/`}
           >
-            LobbyLink.ai
+            lobbylink.ai
           </a>
         </div>
       </footer>

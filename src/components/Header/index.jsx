@@ -1,7 +1,5 @@
 import { Container, Offcanvas, Navbar, Image, Col, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-
-import sample_men from "../../assets/images/manlogo.png";
 import logo from "../../assets/images/logo.png";
 
 const Header = () => {
@@ -103,7 +101,7 @@ const Header = () => {
               {/* Offcanvas body with navigation links */}
               <Offcanvas.Body>
                 <Nav
-                  className={`d-flex justify-content-end flex-grow-1 gap-5 gap-lg-3 gap-xl-5 align-items-center`}
+                  className={`d-flex justify-content-end flex-grow-1 gap-5 gap-lg-3 gap-xl-5 align-items-center me-xl-3`}
                 >
                   <Nav.Link
                     href={`/about`}
@@ -119,15 +117,17 @@ const Header = () => {
                   </Nav.Link>
                   {/* User profile link with image */}
                   <Nav.Link
-                    className={`navmanu text-nowrap fw-semibold text-black text-nowrap font-Poppins fs-20 fst-normal lh-0`}
+                    className={`navmanu d-flex justify-content-center align-items-center gap-2 text-nowrap fw-semibold text-black text-nowrap font-Poppins fs-20 fst-normal `}
                     href={`/contact`}
                   >
-                    <Image
+                    <i className="bi bi-person-circle fs-30"></i>
+                    <p className="mt-13 fw-normal">Login</p>
+                    {/* <Image
                       src={sample_men}
                       width={"50px"}
                       height={"45px"}
                       roundedCircle
-                    />
+                    /> */}
                   </Nav.Link>
                 </Nav>
               </Offcanvas.Body>

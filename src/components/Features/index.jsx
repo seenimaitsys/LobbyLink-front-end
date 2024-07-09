@@ -1,6 +1,6 @@
 import { Row, Col, Card, Container } from "react-bootstrap";
 import { DynamicCard, DynamicCard2 } from "./DynamicCard";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
 const Features = () => {
   return (
     <>
@@ -15,12 +15,17 @@ const Features = () => {
                 className={`mt-5 d-flex flex-column align-items-center `}
                 key={index}
               >
-                {/* Icon container */}
-                <div
-                  className={`d-flex align-items-center justify-content-center h-6 w-6 bg-blue-100 rounded-35`}
+                <AnimationOnScroll
+                  animateIn={`animate__fadeIn animate__delay-${0.8}s`}
+                  animateOnce={true}
                 >
-                  <i className={`bi ${value.icon} text-yellow-100 fs-28`}></i>
-                </div>
+                  {/* Icon container */}
+                  <div
+                    className={`d-flex align-items-center justify-content-center h-6 w-6 bg-blue-100 rounded-35`}
+                  >
+                    <i className={`bi ${value.icon} text-yellow-100 fs-28`}></i>
+                  </div>
+                </AnimationOnScroll>
                 {/* Title */}
                 <h5 className={`text-center mt-4 h-50 fw-normal text-blue-100`}>
                   {value.Title}
@@ -30,6 +35,7 @@ const Features = () => {
           })}
 
           {/* Horizontal line */}
+
           <Col
             xl={10}
             xs={10}
@@ -41,23 +47,33 @@ const Features = () => {
         <Row className={`mt-xl-8 mt-5 `}>
           <Col xl={8}>
             {/* Main feature heading */}
-            <h2
-              style={{ fontSize: "clamp(1px, 7vw, 56px)" }}
-              className={`text-blue-100 ms-xl-13 text-center text-xl-start fw-semibold`}
+            <AnimationOnScroll
+              animateIn={`animate__fadeInLeft animate__delay-${0.8}s`}
+              animateOnce={true}
             >
-              LobbyLink Trusted Features
-            </h2>
+              <h2
+                style={{ fontSize: "clamp(1px, 7vw, 56px)" }}
+                className={`text-blue-100 ms-xl-13 text-center text-xl-start fw-semibold`}
+              >
+                LobbyLink Trusted Features
+              </h2>
+            </AnimationOnScroll>
             <Col xl={8} className={`ms-xl-13 `}>
               {/* Feature description */}
-              <p
-                className={`text-blue-100 lh-lg mt-4 text-center text-xl-start fs-22`}
+              <AnimationOnScroll
+                animateIn={`animate__fadeInLeft animate__delay-${0.9}s`}
+                animateOnce={true}
               >
-                LobbyLink is a flexible platform tailored to facilitate complex
-                enterprises such as those in manufacturing, industrial, and
-                other security-intensive environments, focusing on improving and
-                digitizing procedures related to safety, security, and
-                compliance.
-              </p>
+                <p
+                  className={`text-blue-100 lh-lg mt-4 text-center text-xl-start fs-22`}
+                >
+                  LobbyLink is a flexible platform tailored to facilitate
+                  complex enterprises such as those in manufacturing,
+                  industrial, and other security-intensive environments,
+                  focusing on improving and digitizing procedures related to
+                  safety, security, and compliance.
+                </p>
+              </AnimationOnScroll>
             </Col>
           </Col>
 
@@ -69,12 +85,24 @@ const Features = () => {
             <Card
               className={`p-4 w-100 ${DynamicCard[0].CardColor} rounded-30 h-270 z-n1`}
             >
-              <h5
-                className={`text-white fs-24 pb-3 fw-semibold letterSpacing-1`}
+              <AnimationOnScroll
+                animateIn={`animate__fadeIn animate__delay-${0.2}s`}
+                animateOnce={true}
               >
-                {DynamicCard[0].Title}
-              </h5>
-              <p className={`text-white fs-20`}>{DynamicCard[0].Description}</p>
+                <h5
+                  className={`text-white fs-24 pb-3 fw-semibold letterSpacing-1`}
+                >
+                  {DynamicCard[0].Title}
+                </h5>
+              </AnimationOnScroll>
+              <AnimationOnScroll
+                animateIn={`animate__fadeIn animate__delay-${0.3}s`}
+                animateOnce={true}
+              >
+                <p className={`text-white fs-20`}>
+                  {DynamicCard[0].Description}
+                </p>
+              </AnimationOnScroll>
             </Card>
           </Col>
         </Row>
@@ -89,12 +117,22 @@ const Features = () => {
                     value.CardColor
                   } ${value.ms || ""}`}
                 >
-                  <h5
-                    className={`text-white fs-24 pb-3 fw-semibold letterSpacing-1`}
+                  <AnimationOnScroll
+                    animateIn={`animate__fadeIn animate__delay-${0.2}s`}
+                    animateOnce={true}
                   >
-                    {value.Title}
-                  </h5>
-                  <p className={`text-white fs-20`}>{value.Description}</p>
+                    <h5
+                      className={`text-white fs-24 pb-3 fw-semibold letterSpacing-1`}
+                    >
+                      {value.Title}
+                    </h5>
+                  </AnimationOnScroll>
+                  <AnimationOnScroll
+                    animateOnce={true}
+                    animateIn={`animate__fadeIn animate__delay-${0.3}s`}
+                  >
+                    <p className={`text-white fs-20`}>{value.Description}</p>
+                  </AnimationOnScroll>
                 </Card>
               </Col>
             );

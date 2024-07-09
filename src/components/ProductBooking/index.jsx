@@ -1,6 +1,7 @@
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 import growarrow from "../../assets/images/grow-arrow.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 const ProductBooking = () => {
   return (
     <Container fluid>
@@ -12,7 +13,12 @@ const ProductBooking = () => {
             className={`text-white text-center text-xl-start fw-semibold`}
             style={{ fontSize: "clamp(10px, 7.6vw, 62px)" }}
           >
-            Expand visitor management throughout your entire enterprise.
+            <AnimationOnScroll
+              animateIn={`animate__fadeInLeft animate__delay-${0.3}s`}
+              animateOnce={true}
+            >
+              Expand visitor management throughout your entire enterprise.
+            </AnimationOnScroll>
           </h2>
         </Col>
         <Col xs={6} className={`p-0 d-block d-lg-none  pt-3 pb-3`}>
@@ -23,15 +29,20 @@ const ProductBooking = () => {
           className={`d-flex align-items-center justify-content-center`}
         >
           <Col xl={7} lg={12} xs={12}>
-            <p
-              className={`text-white lh-lg text-center text-xl-start`}
-              style={{ fontSize: "clamp(10px, 5vw, 24px)" }}
+            <AnimationOnScroll
+              animateIn={`animate__fadeInLeft animate__delay-${0.3}s`}
+              animateOnce={true}
             >
-              Custom deployments and a unified dashboard make tracking check-ins
-              and securing your front desks simple,
-              <span className={`fw-bold`}>{`whether you're managing one
+              <p
+                className={`text-white lh-lg text-center text-xl-start`}
+                style={{ fontSize: "clamp(10px, 5vw, 24px)" }}
+              >
+                Custom deployments and a unified dashboard make tracking
+                check-ins and securing your front desks simple,
+                <span className={`fw-bold`}>{`whether you're managing one
               location or multiple, from any location.`}</span>
-            </p>
+              </p>
+            </AnimationOnScroll>
           </Col>
           <Col
             xl={5}
@@ -43,12 +54,16 @@ const ProductBooking = () => {
       </Row>
       <Row className={`pb-6 bg-orange-100`}>
         <Col className="d-flex flex-column align-items-center justify-content-center mt-6">
-          <h2
-            className={`text-blue-100 text-center fw-bold`}
-            style={{ fontSize: "clamp(10px, 7.6vw, 56px)" }}
+          <AnimationOnScroll
+            animateIn={`animate__pulse animate__delay-${0.3}s animate__infinite`}
           >
-            Book a Product Demo Today!
-          </h2>
+            <h2
+              className={`text-blue-100 text-center fw-bold`}
+              style={{ fontSize: "clamp(10px, 7.6vw, 56px)" }}
+            >
+              Book a Product Demo Today!
+            </h2>
+          </AnimationOnScroll>
           <p className={`text-blue-100 mt-4 text-center fs-18`}>
             Become one step ahead of the competition.
           </p>

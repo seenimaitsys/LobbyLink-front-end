@@ -22,25 +22,25 @@ export const SocialMedia = [
 ];
 export const FAQ = [
   {
-    name: `Terms & Conditions`,
+    name: `FAQ Question`,
     link: "#",
   },
-  {
-    name: `Privacy Policy`,
-    link: "#",
-  },
-  {
-    name: `Refund Policy`,
-    link: "#",
-  },
+  // {
+  //   name: `Privacy Policy`,
+  //   link: "#",
+  // },
+  // {
+  //   name: `Refund Policy`,
+  //   link: "#",
+  // },
 ];
 export const Contact = [
   {
-    name: `123-456-7890`,
-    link: `tel:123-456-7890`,
+    name: `+1(978)4026846`,
+    link: `tel:9784026846`,
   },
   {
-    name: `inesh.pandi@maitsys.com`,
-    link: `mailto:inesh.pandi@maitsys.com`,
+    name: `lobbylink@maitsys.com`,
+    link: `mailto:lobbylink@maitsys.com`,
   },
 ];
