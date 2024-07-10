@@ -1,11 +1,78 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import desert from "../../assets/images/contactimage.webp";
 import ContactForm from "../../components/ContactForm";
-
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // ContactLayout Component
 const ContactLayout = () => {
   return (
     <>
+      <HelmetProvider>
+        <Helmet>
+          {/* Character set for the document */}
+          <meta charSet={`utf-8`} />
+
+          {/* Title of the contact page */}
+          <title>LobbyLink-Contact</title>
+
+          {/* Description for SEO */}
+          <meta
+            name={`description`}
+            content={`Streamline check-ins and enhance security with LobbyLink. Our user-friendly platform offers efficient visitor registration, badge printing, and comprehensive reporting for a seamless visitor experience.`}
+          />
+
+          {/* Canonical URL for SEO */}
+          <link rel={`canonical`} href={`https://www.lobbylink.ai/contact`} />
+
+          {/* Open Graph metadata for social media sharing */}
+          <meta property={`og:title`} content={`LobbyLink`} />
+          <meta
+            property={`og:description`}
+            content={`Streamline check-ins and enhance security with LobbyLink. Our user-friendly platform offers efficient visitor registration, badge printing, and comprehensive reporting for a seamless visitor experience.`}
+          />
+          <meta property={`og:type`} content={`website`} />
+          <meta
+            property={`og:image`}
+            content={`/../src/assets/images/logo.png`}
+          />
+          <meta
+            property={`og:url`}
+            content={`https://www.lobbylink.ai/contact`}
+          />
+          <meta property={`og:image:alt`} content={`LobbyLink-Contact`} />
+          <meta property={`og:site_name`} content={`LobbyLink-Contact`} />
+
+          {/* Twitter Card metadata for social media sharing */}
+          <meta name={`twitter:card`} content={`summary_large_image`} />
+          <meta name={`twitter:title`} content={`LobbyLink-Contact`} />
+          <meta
+            name={`twitter:description`}
+            content={`Streamline check-ins and enhance security with LobbyLink. Our user-friendly platform offers efficient visitor registration, badge printing, and comprehensive reporting for a seamless visitor experience.`}
+          />
+          <meta
+            name={`twitter:image`}
+            content={`/../src/assets/images/logo.png`}
+          />
+
+          {/* Structured data for SEO using JSON-LD */}
+          <script type={`application/ld+json`}>
+            {`
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.lobbylink.ai/contact",
+          "logo": "/../src/assets/images/logo.png"
+        }
+      `}
+          </script>
+
+          {/* Keywords for SEO */}
+          <meta
+            name={`keywords`}
+            content={`visitor, visitor registration, free demo`}
+          />
+        </Helmet>
+      </HelmetProvider>
+
       {/* Main container with background color and top margin */}
       <Container fluid className={`bg-blue-100 mt-130`}>
         {/* Row to organize the content */}
