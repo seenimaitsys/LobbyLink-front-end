@@ -70,7 +70,7 @@ const Footer = () => {
                 return (
                   <p className={`text-white`} key={index}>
                     <a
-                      href={value.link}
+                      href={`#faq`}
                       className={`text-white text-decoration-none`}
                     >
                       {value.name}

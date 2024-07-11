@@ -1,31 +1,26 @@
 export const FAQList = [
   {
-    Question: "Accordion Item #1",
+    Question: "What support do you offer during the trial period?",
     Answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "We provide comprehensive setup assistance and ongoing technical support to ensure a seamless experience with our product.",
   },
 
   {
-    Question: "Accordion Item #1",
+    Question: "How secure is the visitor information?",
     Answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      " Our product ensures data security by utilizing top-tier encryption standards to protect all data, both in transit and at rest. We employ robust security measures, including continuous monitoring and threat detection, to maintain the highest level of protection for your information.",
   },
 
   {
-    Question: "Accordion Item #1",
+    Question: "What happens after the trial?",
     Answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      " If you are 100% satisfied with the free trial, subscription is just one click away!",
   },
 
   {
-    Question: "Accordion Item #1",
+    Question:
+      "How will I get notified when a visitor is in my office and uses LobbyLink.ai?",
     Answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-
-  {
-    Question: "Accordion Item #1",
-    Answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "We offer notifications via SMS, email, Slack, and Microsoft Teams: to ensure you stay informed through your preferred channels.",
   },
 ];

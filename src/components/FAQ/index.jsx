@@ -12,8 +12,12 @@ const FAQuestion = () => {
             {FAQList.map((value, index) => {
               return (
                 <Accordion.Item eventKey={index.toString()} key={index}>
-                  <Accordion.Header>{value.Question}</Accordion.Header>
-                  <Accordion.Body>{value.Answer}</Accordion.Body>
+                  <Accordion.Header>
+                    <h5>{value.Question}</h5>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <p className="p-xl-2 fs-18 mt-4">{value.Answer}</p>
+                  </Accordion.Body>
                 </Accordion.Item>
               );
             })}
