@@ -12,7 +12,7 @@ export const SocialMedia = [
   {
     name: `instagram`,
     icon: `bi-instagram`,
-    link: `#`,
+    link: `https://www.instagram.com/lobbylink.ai?igsh=MXNwdXc5Z3VxbHYyeQ==`,
   },
   {
     name: `linkedin`,
