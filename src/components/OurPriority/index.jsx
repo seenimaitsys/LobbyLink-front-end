@@ -12,7 +12,7 @@ const OurPriority = () => {
 
         <h1
           style={{ fontSize: "clamp(10px, 9vw, 54px)" }}
-          className="pt-5 ps-5 text-center text-xl-start text-blue-100"
+          className={`pt-5 ps-5 text-center text-xl-start text-blue-100`}
         >
           Your Safety Is Our Priority
         </h1>
@@ -43,7 +43,7 @@ const OurPriority = () => {
                       index % 2 == 0 ? "text-white" : "text-blue-100"
                     } pb-2 fs-38 fw-bold`}
                   >
-                    {`0${index + 1}.`}
+                    {`${index + 1}.`}
                   </h5>
                   {/* Card description with dynamic text color */}
                   <p

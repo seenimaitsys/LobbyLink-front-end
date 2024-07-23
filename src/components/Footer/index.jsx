@@ -38,7 +38,7 @@ const Footer = () => {
                   href={`https://www.google.com/maps/place/FG75%2B9Q,+Acton,+MA,+USA/@42.4634375,-71.4905625,17z/data=!3m1!4b1!4m5!3m4!1s0x89e39130277677cf:0xe8a2dc88b89c2564!8m2!3d42.4634375!4d-71.4905625?entry=ttu`}
                   className={`text-white  text-decoration-none`}
                 >
-                  Boston, MA , USA
+                  Boston, MA, USA
                 </a>
               </p>
             </Col>
@@ -62,8 +62,8 @@ const Footer = () => {
             </Col>
 
             {/* FAQ section */}
-            <Col md={6} lg={6} sm={6} xl={3} className="mx-auto mb-4">
-              <h6 className="text-uppercase text-white fw-bold mb-4 fs-22">
+            <Col md={6} lg={6} sm={6} xl={3} className={`mx-auto mb-4`}>
+              <h6 className={`text-uppercase text-white fw-bold mb-4 fs-22`}>
                 FAQ
               </h6>
               {FAQ.map((value, index) => {

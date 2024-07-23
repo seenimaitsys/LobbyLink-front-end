@@ -58,7 +58,7 @@ $utilities: map-merge(
         map-merge(
           $theme-colors,
           (
-            blue-100: #000080,
+            blue-100: #0033a0,
 
             yellow-100: #fcfae0,
           )
@@ -68,8 +68,8 @@ $utilities: map-merge(
       property: background-color,
       class: bg,
       values: (
-        blue-100: #000080,
-        blue-200: #000137,
+        blue-100: #0033a0,
+        blue-200: #0033a0,
         blue-300: #081057,
         blue-400: #0000000d,
         orange-100: #f8f6f3,
@@ -80,7 +80,7 @@ $utilities: map-merge(
       property: margin-top,
       class: mt,
       values: (
-        130: 130px,
+        130: 100px,
         6: 6rem,
         13: 13px,
         15: 15px,

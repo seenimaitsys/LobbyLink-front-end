@@ -82,8 +82,8 @@ const ContactLayout = () => {
             <Image
               src={desert}
               alt={`desert`}
-              width={"100%"}
-              height={"400px"}
+              width={`100%`}
+              height={`400px`}
             ></Image>
           </Col>
           {/* Column for the contact form (visible on small screens) */}
@@ -102,8 +102,8 @@ const ContactLayout = () => {
             <Image
               src={desert}
               alt={`desert`}
-              width={"100%"}
-              height={"600px"}
+              width={`100%`}
+              height={`600px`}
               className={`p-5`}
             ></Image>
           </Col>

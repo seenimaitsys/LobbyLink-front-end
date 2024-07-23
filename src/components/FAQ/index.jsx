@@ -2,11 +2,13 @@ import { Accordion, Container, Row, Col } from "react-bootstrap";
 import { FAQList } from "./DynamicQuestion";
 const FAQuestion = () => {
   return (
-    <Container className="mt-5">
-      <h2 className="w-100 fs-35 text-center fw-bold letterSpacing-1">
+    <Container className={`mt-5`}>
+      <h2 className={`w-100 fs-35 text-center fw-bold letterSpacing-1`}>
         Frequently Asked Questions
       </h2>
-      <Row className="d-flex flex-column align-items-center justify-content-center mt-5 mb-5">
+      <Row
+        className={`d-flex flex-column align-items-center justify-content-center mt-5 mb-5`}
+      >
         <Col xl={9}>
           <Accordion defaultActiveKey={`0`}>
             {FAQList.map((value, index) => {
@@ -16,7 +18,7 @@ const FAQuestion = () => {
                     <h5>{value.Question}</h5>
                   </Accordion.Header>
                   <Accordion.Body>
-                    <p className="p-xl-2 fs-18 mt-4">{value.Answer}</p>
+                    <p className={`p-xl-2 fs-18 mt-4`}>{value.Answer}</p>
                   </Accordion.Body>
                 </Accordion.Item>
               );

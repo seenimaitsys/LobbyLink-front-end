@@ -11,7 +11,7 @@ const ProductBooking = () => {
         <Col xl={8} xs={12}>
           <h2
             className={`text-white text-center text-xl-start fw-semibold`}
-            style={{ fontSize: "clamp(10px, 7.6vw, 62px)" }}
+            style={{ fontSize: "clamp(10px, 7.6vw, 50px)" }}
           >
             <AnimationOnScroll
               animateIn={`animate__fadeInLeft animate__delay-${0.3}s`}
@@ -35,11 +35,11 @@ const ProductBooking = () => {
             >
               <p
                 className={`text-white lh-lg text-center text-xl-start`}
-                style={{ fontSize: "clamp(10px, 5vw, 24px)" }}
+                style={{ fontSize: "clamp(10px, 5vw, 20px)" }}
               >
                 Custom deployments and a unified dashboard make tracking
                 check-ins and securing your front desks simple,
-                <span className={`fw-bold`}>{`whether you're managing one
+                <span className={`fw-bold`}>{` whether you're managing one
               location or multiple, from any location.`}</span>
               </p>
             </AnimationOnScroll>
@@ -61,7 +61,7 @@ const ProductBooking = () => {
               className={`text-blue-100 text-center fw-bold`}
               style={{ fontSize: "clamp(10px, 7.6vw, 56px)" }}
             >
-              Book a Product Demo Today!
+              Try LobbyLink Today!
             </h2>
           </AnimationOnScroll>
           <p className={`text-blue-100 mt-4 text-center fs-18`}>
@@ -71,7 +71,7 @@ const ProductBooking = () => {
             className={`border-0 mt-3 d-flex align-items-center justify-content-center gap-2 rounded-0 ps-3 fs-18 bg-blue-100`}
           >
             <a href={`/contact`} className={`text-white  text-decoration-none`}>
-              Book Here <i className={`bi bi-chevron-right mt-1`}></i>
+              Try Here <i className={`bi bi-chevron-right mt-1`}></i>
             </a>
           </Button>
         </Col>

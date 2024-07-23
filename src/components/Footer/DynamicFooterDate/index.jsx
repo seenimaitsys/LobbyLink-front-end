@@ -36,7 +36,7 @@ export const FAQ = [
 ];
 export const Contact = [
   {
-    name: `+1(978)4026846`,
+    name: `+1 (978) 402-6846`,
     link: `tel:9784026846`,
   },
   {

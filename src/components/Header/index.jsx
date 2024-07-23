@@ -1,6 +1,14 @@
-import { Container, Offcanvas, Navbar, Image, Col, Nav } from "react-bootstrap";
+import {
+  Container,
+  Offcanvas,
+  Navbar,
+  Image,
+  Col,
+  Nav,
+  Button,
+} from "react-bootstrap";
 import { useState, useEffect } from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 
 const Header = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -56,7 +64,8 @@ const Header = () => {
       <header
         className={`navbar ${
           isNavVisible ? "top-0" : "top-n130"
-        } position-fixed w-100  h-130  bg-orange-100 zIndex-1000`}
+        } position-fixed w-100  bg-orange-100 zIndex-1000`}
+        style={{ height: "110px" }}
       >
         <Navbar expand={`lg`} className={`w-100`}>
           <Container fluid>
@@ -68,8 +77,8 @@ const Header = () => {
               sm={6}
               className={`d-flex  align-items-center`}
             >
-              <Image src={logo} width={"90px"}></Image>
-              <h2 className={`text-blue-100 fs-30 fw-bold ms-n1 mt-15`}>
+              <Image src={logo} width={`70px`}></Image>
+              <h2 className={`text-blue-100 fs-35 fw-bold ms-2 mt-15`}>
                 <a href={`/`} className={`text-blue-100 text-decoration-none`}>
                   LobbyLink
                 </a>
@@ -83,6 +92,7 @@ const Header = () => {
               aria-labelledby={`offcanvasNavbarLabel-expand-sm}`}
               placement={`end`}
               backdrop={true}
+              className={`w-75`}
             >
               {/* Offcanvas header with brand logo */}
               <Offcanvas.Header closeButton>
@@ -91,8 +101,8 @@ const Header = () => {
                     href={`/`}
                     className={`d-flex align-items-center`}
                   >
-                    <Image src={logo} width={"90px"}></Image>
-                    <h2 className={`text-blue-100 mt-15 fs-30 fw-bold ms-n1`}>
+                    <Image src={logo} width={`70px`}></Image>
+                    <h2 className={`text-blue-100 mt-15 fs-35 fw-bold ms-2`}>
                       LobbyLink
                     </h2>
                   </Navbar.Brand>
@@ -101,7 +111,7 @@ const Header = () => {
               {/* Offcanvas body with navigation links */}
               <Offcanvas.Body>
                 <Nav
-                  className={`d-flex justify-content-end flex-grow-1 gap-5 gap-lg-3 gap-xl-5 align-items-center me-xl-3`}
+                  className={`d-flex justify-content-end flex-grow-1 gap-5 gap-lg-3 gap-xl-4 align-items-center me-xl-3`}
                 >
                   <Nav.Link
                     href={`/about`}
@@ -120,14 +130,12 @@ const Header = () => {
                     className={`navmanu d-flex justify-content-center align-items-center gap-2 text-nowrap fw-semibold text-black text-nowrap font-Poppins fs-20 fst-normal `}
                     href={`/contact`}
                   >
-                    <i className="bi bi-person-circle fs-30"></i>
-                    <p className="mt-13 fw-normal">Login</p>
-                    {/* <Image
-                      src={sample_men}
-                      width={"50px"}
-                      height={"45px"}
-                      roundedCircle
-                    /> */}
+                    <Button
+                      className={`border-0  d-flex align-items-center justify-content-center gap-2 rounded-1 fs-22 bg-blue-100`}
+                    >
+                      App Login
+                      {/* Login <i className={`bi bi-chevron-right mt-1`}></i> */}
+                    </Button>
                   </Nav.Link>
                 </Nav>
               </Offcanvas.Body>
