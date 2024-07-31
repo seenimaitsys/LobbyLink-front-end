@@ -7,13 +7,13 @@ export const DynamicCard = [
     Title: `Check in and Check out`,
     Description: `The platform features an exceptionally user-friendly interface, enabling seamless check-ins and check-outs that automatically signal your arrival and departure.`,
     CardColor: `bg-blue-100`,
-    image: Image4,
+    image: Image2,
   },
   {
     Title: `Mobile Proficiency`,
     Description: `The system supports both iPad and QR code integration, allowing access from personal devices as well as a central terminal.`,
     CardColor: `bg-blue-200`,
-    image: Image2,
+    image: Image4,
   },
   {
     Title: `Reports`,
