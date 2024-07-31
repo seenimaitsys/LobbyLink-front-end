@@ -1,13 +1,14 @@
 import { Row, Col, Container, Image } from "react-bootstrap";
 import { DynamicCard, DynamicCard2 } from "./DynamicCard";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import checkin from "../../assets/images/checkin.png";
+// import checkin from "../../assets/images/checkin.png";
+
 const Features = () => {
   return (
     <>
       <Container
         fluid
-        className={`d-flex flex-column align-items-center justify-content-center`}
+        className={`d-flex flex-column align-items-center justify-content-center overflow-hidden`}
       >
         {/* Row for main feature description and first card */}
         <Row className={`mt-xl-6 mt-5 `}>
@@ -87,7 +88,11 @@ const Features = () => {
                 } flex-xl-row align-items-center justify-content-center`}
               >
                 <Col xl={6}>
-                  <Image src={checkin} alt={`check in`} width={`100%`}></Image>
+                  <Image
+                    src={value.image}
+                    alt={`check in`}
+                    width={`100%`}
+                  ></Image>
                 </Col>
                 <Col
                   xl={5}

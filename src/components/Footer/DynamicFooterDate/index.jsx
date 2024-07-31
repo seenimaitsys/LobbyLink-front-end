@@ -2,17 +2,17 @@ export const SocialMedia = [
   {
     name: `facebook`,
     icon: `bi-facebook`,
-    link: `#`,
+    link: `https://www.facebook.com/people/Lobby-Link/pfbid02EnA6q29iiWSx7ym2WKe7WdB7P9k48Z3V48aevp8AkwAbnNGQN6EEJkKXehfsFQnVl/?name=xhp_nt__fb__action__open_user`,
   },
   {
     name: `twitter`,
     icon: `bi-twitter-x`,
-    link: `#`,
+    link: `http://x.com/lobbylink_ai`,
   },
   {
     name: `instagram`,
     icon: `bi-instagram`,
-    link: `https://www.instagram.com/lobbylink.ai?igsh=MXNwdXc5Z3VxbHYyeQ==`,
+    link: `https://www.instagram.com/lobbylink.ai/`,
   },
   {
     name: `linkedin`,

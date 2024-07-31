@@ -84,6 +84,8 @@ const ContactLayout = () => {
               alt={`desert`}
               width={`100%`}
               height={`400px`}
+              loading={`lazy`}
+              property={`true`} // This ensures the image is prioritized for loading
             ></Image>
           </Col>
           {/* Column for the contact form (visible on small screens) */}
@@ -105,6 +107,8 @@ const ContactLayout = () => {
               width={`100%`}
               height={`600px`}
               className={`p-5`}
+              loading={`lazy`}
+              property={`true`} // This ensures the image is prioritized for loading
             ></Image>
           </Col>
         </Row>
