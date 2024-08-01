@@ -8,7 +8,7 @@ import {
   Button,
 } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import logo from "../../assets/images/logo1.png";
+import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
