@@ -128,7 +128,8 @@ const Header = () => {
                   {/* User profile link with image */}
                   <Nav.Link
                     className={`navmanu d-flex justify-content-center align-items-center gap-2 text-nowrap fw-semibold text-black text-nowrap font-Poppins fs-20 fst-normal `}
-                    href={`/contact`}
+                    href={`http://ec2-18-219-24-232.us-east-2.compute.amazonaws.com:3000/`}
+                    target={`_blank`}
                   >
                     <Button
                       className={`border-0  d-flex align-items-center justify-content-center gap-2 rounded-1 fs-22 bg-blue-100`}
