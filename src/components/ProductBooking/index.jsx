@@ -22,7 +22,7 @@ const ProductBooking = () => {
           </h2>
         </Col>
         <Col xs={6} className={`p-0 d-block d-lg-none  pt-3 pb-3`}>
-          <Image src={growarrow} className={`w-100`}></Image>
+          <Image src={growarrow} className={`w-100`} loading={'lazy'}></Image>
         </Col>
         <Col
           xl={8}
